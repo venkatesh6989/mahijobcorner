@@ -1,0 +1,17 @@
+POST  http://localhost:5000/formData
+Content-Type: application/json
+
+{   "jobId": "12",
+    "logoUrl": "qwertyuiop",
+    "roleName": "software",
+    "companyName": "wipro",
+    "location": "hyderbad",
+    "postedAt": "5"
+}
+###
+
+DELETE http://localhost:5000/jobDelete/1 
+###
+
+GET http://localhost:5000/jobs
+###
