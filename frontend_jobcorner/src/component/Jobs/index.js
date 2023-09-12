@@ -2,30 +2,7 @@ import React, {useState,useEffect} from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 function Jobs(){
-   const [jobsData, setJobsData] = useState(null)
-
-  useEffect(()=>{
-   const  getTheJobsData = async() => {
-     const url = 'http://localhost:5000/jobs'
-     const response = await fetch(url);
-     const data = await response.json()
-    //  console.log(data)
-     const modifiedData = data.map(eachjob => ({
-        jobId: eachjob.job_id,
-        logoUrl: eachjob.logo_url,
-        roleName: eachjob.role_name,
-        companyName: eachjob.company_name,
-        location: eachjob.location,
-        postedAt: eachjob.posted_at,
-     }))
-    //  console.log(modifiedData)
-    setJobsData(modifiedData)
-
-  }
-  getTheJobsData()
-})
-
- 
+const [jobsData,setJobsData] = useState(null)
 
 return(
         <div className="p-5">

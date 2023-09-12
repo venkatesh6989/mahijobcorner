@@ -9,7 +9,7 @@ function Header(){
                 <Link to='/' className='link p-3' style={{"textDecorationLine": "none"}}>Home</Link><br/>
                 <Link to='/jobs' className='p-3' style={{"textDecorationLine": "none"}}>Jobs</Link><br/>
              </div>
-            <button className='btn btn-primary'>Login</button>
+            <Link to='/admin-edit' className='btn btn-primary'>Admin Login</Link>
     </nav>
     )
 }
